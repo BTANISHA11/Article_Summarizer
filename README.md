@@ -1,6 +1,6 @@
-<h1 align="center">SummaBriefs: Summarize Your Articles in One Click</h1>
+<h1 align="center">Article Summarizer: Summarize Your Articles in One Click</h1>
 <p align="center">
-  <img width="300" alt="Compresso Logo" src="https://github.com/Yash-Sajwan24/SummaBriefs/blob/main/src/assets/Logo.png">
+  <img width="300" alt="Compresso Logo" src="https://github.com/BTANISHA11/Article_Summarizer/blob/main/src/assets/Logo.png">
 </p>
 
 ## Demo Article Link
@@ -12,7 +12,7 @@ SummaBriefs is an open-source article summarizer that aims to simplify reading b
 
 ## Live Project
 
-Visit the live project at [SummaBriefs](https://summabriefs.netlify.app/)
+Visit the live project at [Article Summarizer](https://summabriefs.netlify.app/)
 
 ## Features
 
@@ -25,9 +25,9 @@ Visit the live project at [SummaBriefs](https://summabriefs.netlify.app/)
 
 ## Installation
 
-To use SummaBriefs locally, follow these steps:
+To use Article Summarizer locally, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/Yash-Sajwan24/SummaBriefs`
+1. Clone the repository: `git clone https://github.com/BTANISHA11/Article_Summarizer`
 2. Install dependencies: `npm install`
 3. Run the application: `npm run dev`
 
