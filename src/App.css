@@ -17,7 +17,7 @@
 }
 
 .main:before {
-  background: radial-gradient(circle, rgba(2, 0, 36, 0) 0, #fafafa 100%);
+  background: url('src/assets/bg.svg');
   position: absolute;
   content: "";
   z-index: 2;
@@ -44,16 +44,16 @@
   width: 100%;
   max-width: 640px;
   background-image: radial-gradient(
-      at 27% 37%,
-      hsla(215, 98%, 61%, 1) 0px,
-      transparent 0%
-    ),
-    radial-gradient(at 97% 21%, hsla(125, 98%, 72%, 1) 0px, transparent 50%),
-    radial-gradient(at 52% 99%, hsla(354, 98%, 61%, 1) 0px, transparent 50%),
-    radial-gradient(at 10% 29%, hsla(256, 96%, 67%, 1) 0px, transparent 50%),
-    radial-gradient(at 97% 96%, hsla(38, 60%, 74%, 1) 0px, transparent 50%),
-    radial-gradient(at 33% 50%, hsla(222, 67%, 73%, 1) 0px, transparent 50%),
-    radial-gradient(at 79% 53%, hsla(343, 68%, 79%, 1) 0px, transparent 50%);
+    at 27% 37%,
+    #ff5e5b 0px,
+    transparent 0%
+  ),
+  radial-gradient(at 97% 21%, #ffdd67 0px, transparent 50%),
+  radial-gradient(at 52% 99%, #48c6ef 0px, transparent 50%),
+  radial-gradient(at 10% 29%, #ffa931 0px, transparent 50%),
+  radial-gradient(at 97% 96%, #ff66b2 0px, transparent 50%),
+  radial-gradient(at 33% 50%, #a884eb 0px, transparent 50%),
+  radial-gradient(at 79% 53%, #43e97b 0px, transparent 50%);
   position: absolute;
   content: "";
   width: 100%;
@@ -62,6 +62,7 @@
   top: 80px;
   opacity: 0.15;
 }
+
 
 @media screen and (max-width: 640px) {
   .main {
@@ -76,7 +77,7 @@
 }
 
 .black_btn {
-  @apply rounded-full border border-black bg-black py-1.5 px-5 text-sm text-white transition-all hover:bg-white hover:text-black;
+  @apply rounded-full border border-black bg-black py-4 font-bold px-4 text-sm text-white transition-all hover:bg-white hover:text-black;
 }
 
 .head_text {
@@ -84,11 +85,11 @@
 }
 
 .orange_gradient {
-  @apply bg-gradient-to-r from-amber-500 via-orange-600 to-yellow-500 bg-clip-text text-transparent;
+  @apply bg-gradient-to-r via-orange-600  from-yellow-500  to-yellow-500 bg-clip-text text-transparent;
 }
 
 .desc {
-  @apply mt-5 text-lg text-gray-600 sm:text-xl text-center max-w-2xl;
+  @apply mt-5 text-lg text-gray-600 sm:text-xl text-center max-w-3xl;
 }
 
 .url_input {
@@ -107,10 +108,52 @@
   @apply w-7 h-7 rounded-full bg-white/10 shadow-[inset_10px_-50px_94px_0_rgb(199,199,199,0.2)] backdrop-blur flex justify-center items-center cursor-pointer;
 }
 
+.trash_btn {
+  width: 25px;
+  transition: transform 0.3s, filter 0.3s;
+}
+/* .trash_btn:hover {
+  transform: scale(1.2); 
+} */
+/* .trash_btn:hover svg path {
+  fill: #FF0000; 
+  filter: drop-shadow(0 0 5px #FF0000); 
+} */
+.trash_btn{
+  background-color: transparent;
+}
+.trash_btn:hover {
+  transform: scale(1.1); /* Enlarge the icon by 10% */
+  animation: glow .75s infinite alternate; /* Add the glow animation */
+  outline: none;
+}
+@keyframes glow {
+  0% {
+    /* box-shadow: 0 0 5px #FF0000;  Initial glow effect  */
+    filter: drop-shadow(0 0 10px red);
+  }
+  100% {
+    /* box-shadow: 0 0 20px 5px #FF0000;  Intensified glow effect  */
+    filter: drop-shadow( 5px 5px 30px 10px red);
+  }
+}
+.trash_btn:hover svg path {
+  fill: #FF0000; /* Change to red color on hover */
+}
+
+
 .blue_gradient {
   @apply font-black bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent;
 }
 
+.green_gradient {
+  @apply font-black bg-gradient-to-r from-teal-400 to-cyan-500 bg-clip-text text-transparent;
+}
+
 .summary_box {
   @apply rounded-xl border border-gray-200 bg-white/20 shadow-[inset_10px_-50px_94px_0_rgb(199,199,199,0.2)] backdrop-blur p-4;
+}
+
+.actual_orange_gradient {
+  @apply font-black bg-gradient-to-r from-orange-500 to-yellow-500 bg-clip-text text-transparent;
 }
