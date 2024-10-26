@@ -12,7 +12,7 @@ SummaBriefs is an open-source article summarizer that aims to simplify reading b
 
 ## Live Project
 
-Visit the live project at [Article Summarizer](https://summabriefs.netlify.app/)
+Visit the live project at [Article Summarizer](https://article-summarizer-blush.vercel.app/)
 
 ## Features
 
